@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+
+<form action="" method="post">
+  <div>
+    <h1>Login</h1>
+    <p>Please enter username and password to signin</p>
+      {% if msg  %}
+       <h1> {{ msg }}</h1>
+    {% endif %}
+    <hr><label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <hr>
+    <button type="submit">Login</button>
+  </div>
+  <div>
+    <p>Don't have account ? <a href="#">Create account</a>.</p>
+  </div>
+</form>
+</body>
+</html>
+{%  endblock %}

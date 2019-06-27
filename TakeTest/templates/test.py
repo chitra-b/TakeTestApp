@@ -1,0 +1,1 @@
+from TakeTestApp.views import RegistrationView
